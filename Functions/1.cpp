@@ -12,5 +12,8 @@ int printHello(){
 int main(){
     //function call
     printHello();
+//      int val  = printHello();
+//     cout<<"val = "<<val<<endl;ṇ
 
 }
+
