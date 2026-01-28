@@ -13,7 +13,11 @@ int main(){
     //function call
     printHello();
 //      int val  = printHello();
-//     cout<<"val = "<<val<<endl;ṇ
+//     cout<<"val = "<<val<<endl;
+
+// cout<<printHello()<<endl;
 
 }
 
+// Parameters for a function 
+// input ---> parameter 
