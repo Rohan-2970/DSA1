@@ -27,3 +27,5 @@ int main(){
 
 // 📌 Functions execute in Last In First Out (LIFO) order
 // 📌 Stack memory is used
+
+// 6️⃣ Parameter Passing
