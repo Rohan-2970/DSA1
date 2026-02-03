@@ -36,5 +36,12 @@ int main(){
 
 
     //Sum of elements
-    
+    // to do the sum of elements we need 
+    // to take 2 numbers and 1 extra variable 
+    cout<<endl;
+    int sum = 0;
+    for(int i = 0; i<n; i++){
+        sum += arr[i];
+    }
+    cout<<"Sum of all the numbers: "<<sum;
 }
