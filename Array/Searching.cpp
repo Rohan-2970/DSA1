@@ -20,7 +20,7 @@ int main(){
     cin>>key;
     bool found = false;
     for(int i = 0; i<n;i++){
-        if(arr[i] == key){
+         if(arr[i] == key){ //Compares the current element with the key
             cout<<"Element found at index: "<<i<<endl;
             found = true;
             break;
