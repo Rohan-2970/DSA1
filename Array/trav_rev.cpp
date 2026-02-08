@@ -35,7 +35,7 @@ int main(){
     int arr[n];
     cout<<"Enter the "<<n<<" number of elements: \n";
     for(int i=0;i<n; i++){
-        cout<<arr[i]<<endl;
+        cin>>arr[i]; // input from the user 
     }
     // Forward Traversal
     cout<<"\nForward Traversal: ";
