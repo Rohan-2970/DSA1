@@ -37,5 +37,17 @@ int main(){
     cout<<endl;
 
 // Step 2: Range Sum Query
+    int L,R;
+    cout<<"Enter L and R : ";
+    cin>>L>>R;
+    
+    int rangeSum;
+    if(L == 0)
+        rangeSum = prefix[R];
+    else
+        rangeSum = prefix[R] - prefix[L - 1];
+
+    cout<<"Sum from index "<<L<<" to "<< R <<" = "<<rangeSum;
+    
 
 }
