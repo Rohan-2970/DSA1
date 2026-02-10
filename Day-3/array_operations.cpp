@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 int main(){
     int n;
@@ -6,7 +7,7 @@ int main(){
     cin>>n;
     cout<<endl;
 
-    int arr[n];
+    vector<int> arr(n);
     cout<<"Enter the "<<n<<" elements in the array: ";
     for(int i=0; i<n;i++){
         //cout<<arr[i]<<" ";  // write this if you want the 
