@@ -42,7 +42,7 @@ int binarySearch(int arr[], int n, int key){
        if(arr[mid]<key){// here we are bascally achecking the number whose value is greater than the mid value
         start = mid+1;
        }
-       else{
+       else if (arr[mid]>key){
         end = mid-1; // see the above commenthere we are looking for the value less than the mid value
        }
 // Array: [2, 4, 6, 8, 10]
