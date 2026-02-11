@@ -39,15 +39,21 @@ int binarySearch(int arr[], int n, int key){
        if(arr[mid] == key){
         return mid;
        }   
-       if(arr[mid]<key){
+       if(arr[mid]<key){// here we are bascally achecking the number whose value is greater than the mid value
         start = mid+1;
        }
        else{
-        end = mid-1;
+        end = mid-1; // see the above commenthere we are looking for the value less than the mid value
        }
-       mid = (start + end)/2;
+// Array: [2, 4, 6, 8, 10]
+// Key = 3
+// mid = 6
+// 6 > 3
+// Move left → end = mid - 1
+
+       mid = (start + end)/2; // Recalculate mid
     }
-    return -1;
+    return -1; //element not found 
 }
 
 int main(){
