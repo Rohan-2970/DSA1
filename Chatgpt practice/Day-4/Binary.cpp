@@ -75,6 +75,6 @@ if(result != -1){
 else{
     cout<<"Elements not found"<<endl;
 }
-
-
 }
+// Time: O(log n)
+// Space: O(1)
