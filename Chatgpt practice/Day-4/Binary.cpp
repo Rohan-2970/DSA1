@@ -33,7 +33,8 @@ int binarySearch(int arr[], int n, int key){
     int start = 0;
     int end = n-1;
 
-    int mid = (start + end)/2;
+    // int mid = (start + end)/2; This is not interview perfect
+    int mid = (start + end) / 2;
 
     while(start<=end){
        if(arr[mid] == key){
