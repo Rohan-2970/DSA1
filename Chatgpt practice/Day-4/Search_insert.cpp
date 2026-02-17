@@ -58,6 +58,6 @@ int main(){
     cin>>key;
     int search = searchinsert(arr,n,key);
     cout<<"inset positions: "<<search<<endl;
-// print the new arry 
+// print the new arry ś
 
 }
