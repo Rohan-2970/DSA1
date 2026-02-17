@@ -6,9 +6,18 @@
 
 // arr = [2,3,4,5,5,5,7,11]
 
+// initaily - we take first = -1 , last = -1
+
 // In case of first occurance 
 // first = 3 , last = 3
 // here when we go to the next position then 
-// first = 4 . last = 3
+// first = 3 , last = 4
 // again in the next step 
-// first = 5 , last = 3
+// first = 3 , last = 5
+
+// time complexityn is  O(N) - we will reduce it to log(N)
+// initially it is linear search but we will apply binary
+
+// lower bound  = mid > n
+// upper bound  = mid <n
+
