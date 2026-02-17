@@ -34,16 +34,17 @@
 
 
 #include<iostream>
+#include<vector>
 using namespace std;
 
-int firstOccurence(int arr[], int n, int key){
+int firstOccurence(vector<int>&arr, int n, int key){
     int low = 0, high = n-1;
-    int first = -1;
+    int ans = -1;
 
     while(low<=high){
         int mid = low + (high - low)/2;
         if(arr[mid]==key){
-            first = mid;
+            ans = mid;
             high = mid-1;
         }
         else if(arr[mid]<key){
@@ -54,6 +55,51 @@ int firstOccurence(int arr[], int n, int key){
             high = mid - 1;
         }
     }
-    return first;
+    return ans;
 }
 
+int lastoccurance(vector <int>& arr, int n, int key){
+    int low = 0 , high = n-1;
+    int ans = -1;
+    while(low<=high){
+        int mid = low +(high-low)/2;
+        
+        if(arr[mid]==key){
+            ans = mid;
+            low = mid + 1;
+        }
+        else if(arr[mid]<key){
+            low = mid +1;
+
+        }
+        else{
+            high = mid -1;
+        }
+    }
+    return ans;
+}
+
+int main(){
+    int n,key;
+    cout<<"Enter th number of elements: ";
+    cin>>n;
+    vector<int> arr(n);
+    for(int i = 0; i<n; i++){
+        cin>>arr[i];
+    }
+    cout<<"Enter the number you want to find: ";
+    cin>>key;
+
+    int first = firstOccurence(arr,n,key);
+    int last = lastoccurance(arr,n,key);
+
+    if(first == -1)
+        cout<<"Element not found\n";
+    else{
+        cout<<"First Occurence: "<<first<<endl;
+        cout<<"Last Occurence: "<<last<<endl;
+        cout<<"Total Count: "<<last - first + 1 <<endl;
+    }
+    
+
+}
