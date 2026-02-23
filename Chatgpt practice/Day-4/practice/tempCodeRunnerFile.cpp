@@ -8,8 +8,8 @@ int binarysearch(int arr[], int n, int key){
     int low =0;
     int high = n-1;
 
+    int mid = (high-low)/2;
     while(low<=high){
-        int mid = low + (high-low)/2;
         if(arr[mid]==key){
             return mid;
         }
@@ -38,7 +38,7 @@ int main(){
 
     int result = binarysearch(arr.data(),n, key);
     if(result !=-1)
-        cout<<"if elemt is at inedx"<<result<<endl;
+        cout<<"if elemt is at inedx"<<key<<endl;
     else
         cout<<"elemrnt not found ";
 
