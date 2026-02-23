@@ -28,10 +28,11 @@ int main(){
     cin>>n;
 
     vector<int> arr(n);
+    cout<<"Enter the value of each elemtn: ";
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    cout<<"Enter the element: ";
+    cout<<"Enter the element to search : ";
     cin>>key;
     int r = binarySearchalgo(arr.data(),n,key);
     if(r != -1){
