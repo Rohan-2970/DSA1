@@ -34,6 +34,7 @@ int main(){
     }
     cout<<"Enter the element to search : ";
     cin>>key;
+    
     int r = binarySearchalgo(arr.data(),n,key);
     if(r != -1){
         cout<<"Element faound at index: "<<r<<endl;
