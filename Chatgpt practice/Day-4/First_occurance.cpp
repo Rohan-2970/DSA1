@@ -51,7 +51,7 @@ int firstOccurence(vector<int>&arr, int n, int key){
             
             low = mid + 1;
         }
-        else{
+        else{ // isme high = mid-1 kyuki mid>key and so high-1 karnese mid automaticly shift hojayega
             high = mid - 1;
         }
     }
