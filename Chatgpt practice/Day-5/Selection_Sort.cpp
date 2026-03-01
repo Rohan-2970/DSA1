@@ -65,3 +65,10 @@ int main(){
         cout<<arr[i]<<" ";
     }
 }
+
+// Time & Space Complexity:
+
+// Case	Number of Comparisons	Number of Swaps	Time Complexity
+// Best Case (Already Sorted)	n(n-1)/2	At most n-1	O(n²)
+// Average Case (Random Order)	n(n-1)/2	At most n-1	O(n²)
+// Worst Case (Reverse Sorted)	n(n-1)/2	At most n-1	O(n²)
