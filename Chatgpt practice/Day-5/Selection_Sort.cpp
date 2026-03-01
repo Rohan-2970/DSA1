@@ -49,12 +49,12 @@ int main(){
 
     //Selection Sort
     for(int i = 0; i<n-1; i++){
-        int MinIndex = i;
+        int MinIndex = i; // giving the min value of i to MinValue
 
         //Find smallest element in unsorted part
-        for(int j = i+1; j<n; j++){
+        for(int j = i+1; j<n; j++){ // first is already sorted so now i+1
             if(arr[j]<arr[MinIndex]){
-                MinIndex = j;
+                MinIndex = j; //new min element is j
             }
         }
             // Swap smallest element with curretn position
