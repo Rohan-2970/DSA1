@@ -1,3 +1,13 @@
+// Time complexity
+
+//   case      Normal version      Optimized 
+// Worst Case   	O(n²)	           O(n²)
+// Average	        O(n²)	           O(n²)
+// Best Case	    O(n²)	            O(n)
+
+
+
+
 #include<iostream>
 #include<vector>
 using namespace std;
