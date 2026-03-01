@@ -59,6 +59,12 @@ int main(){
     }
 
     // bubble sort
+
+// Yaha pe humlog unsorted array ko 2 parts me 
+// divide karre hai inner loop{i} nad outer loop{j}
+// 1 7 5 3 4 issme pahila kaam hoga ki 7 ko last me
+// leke jana phir 5 ko last me leke jayenge  
+
     for(int i = 0; i<n-1;i++){
         for(int j = 0; j<n-i-1;j++){
             if(arr[j]>arr[j+1]){// yaha pe j > j+1 
