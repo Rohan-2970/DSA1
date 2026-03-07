@@ -56,4 +56,7 @@ int main(){
 
 }
 
-
+// time complexity 
+// worst casr    - o(n^2)
+// average case  - O(n^2)
+// best case     - O(n)
