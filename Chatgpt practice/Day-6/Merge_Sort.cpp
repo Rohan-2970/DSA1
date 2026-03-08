@@ -54,11 +54,18 @@
 #include<vector>
 using namespace std;
 
-void merge(int arr[], int l, int mid, int r){
-    int n1 = mid-l+1;
-    int n2 = r-mid;
-    vector<int>left(n1);
-    vector<int>right(n2);
+void merge(int arr[], int l, int mid, int r){ //2️⃣ Merge Function
+// l - left, r = right, mid = middle 
+    int n1 = mid-l+1; //calculates size of left array.
+// l = 0
+// mid = 1
+
+    int n2 = r-mid; //calculates size of right array.
+// r = 3
+// mid = 1    n2 = 3 - 1 = 2
+
+    vector<int>left(n1); // creates temoprary arrays -- stores lefte half
+    vector<int>right(n2); // tores right half
 
     for(int i=0; i<n1;i++){
         left[i] = arr[l+i];
@@ -66,14 +73,15 @@ void merge(int arr[], int l, int mid, int r){
     for(int j = 0; j<n2; j++){
         right[j] = arr[mid+1+j];
     }
-    int i=0,j=0,k=l;
+    int i=0,j=0,k=l; // i - lefty pointer , j - right , k - for original
 
-    while(i<n1 && j<n2)
-        if(left[i] <= right[j])
+    while(i<n1 && j<n2) //compare elements
+        if(left[i] <= right[j]) // compare values 
             arr[k++] = left[i++];
+// left element is smaller
         else
             arr[k++] = right[j++];
-    
+    //right element is smaller
 
     while(i<n1)
         arr[k++] = left[i++];
