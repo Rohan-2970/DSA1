@@ -74,10 +74,18 @@ void merge(int arr[], int l, int mid, int r){ //2️⃣ Merge Function
         right[j] = arr[mid+1+j];
     }
     int i=0,j=0,k=l; // i - lefty pointer , j - right , k - for original
+// K- here we are using it as the final array 
 
     while(i<n1 && j<n2) //compare elements
-        if(left[i] <= right[j]) // compare values 
+        if(left[i] <= right[j]) 
+
+// compare values until either of them is exhausted-can be done with while loop
             arr[k++] = left[i++];
+            
+// arr[l] = left[i];  // copy value
+// l++;               // move to next position in arr
+// i++;               // move to next element in left[]
+
 // left element is smaller
         else
             arr[k++] = right[j++];
