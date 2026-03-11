@@ -20,5 +20,14 @@ void merge(int arr[], int l, int mid, int r){
         }
         else
             arr[l++] = right[j++];
-            
+    while(i<n1){
+        arr[l++] = left[i++];
+    }
+    while(i<n2){
+        arr[l++] = right[j++];
+    }
+void mergesort(int arr[], int r, int l){
+    
+}
+
 }

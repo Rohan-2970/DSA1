@@ -81,11 +81,11 @@ void merge(int arr[], int l, int mid, int r){ //2️⃣ Merge Function
 
 // compare values until either of them is exhausted-can be done with while loop
             arr[k++] = left[i++];
-            
+
 // arr[l] = left[i];  // copy value
 // l++;               // move to next position in arr
 // i++;               // move to next element in left[]
-
+// jab right ya left me samll element ho toh usko add karna hai main array me uske liye k++ = j++
 // left element is smaller
         else
             arr[k++] = right[j++];
@@ -101,9 +101,13 @@ void mergeSort(int arr[], int l, int r){
         int mid = l+(r-l)/2;
 
         mergeSort(arr,l,mid);
-        mergeSort(arr,mid+1,r);
+        // Sort the left half
+
+        mergeSort(arr,mid+1,r); 
+        // Sort the right half
 
         merge(arr,l,mid,r);
+// Now we combine the two sorted halves into one sorted array.
     }
 }
 int main(){
