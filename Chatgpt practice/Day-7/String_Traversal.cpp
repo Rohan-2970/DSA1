@@ -19,3 +19,4 @@ int main(){
         cout<<s[i]<<" ";
     }
 }
+// Time Complexity = O(n)
