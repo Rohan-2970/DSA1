@@ -26,8 +26,30 @@ void merge(int arr[], int l, int mid, int r){
     while(i<n2){
         arr[l++] = right[j++];
     }
-void mergesort(int arr[], int r, int l){
-    
+}
+void mergesort(int arr[], int l, int r){
+    if(l<r){
+        int mid = l+(r-l)/2;
+        mergesort(arr,mid,l);
+        mergesort(arr,mid+1,r);
+        merge(arr, l, mid, r);
+    }
+}
+int main(){
+    int n;
+    cout<<"Enter the number of elements: ";
+    cin>>n;
+
+    vector<int>arr(n);
+    cout<<"Enter value of each element: ";
+    for(int i = 0; i<n;i++){
+        cin>>arr[i];
+}
+    mergesort(arr.data(), 0, n-1);
+    cout<<"Sorted Array: ";
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+
 }
 
 }
