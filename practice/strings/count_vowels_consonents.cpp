@@ -30,7 +30,10 @@ int main(){
         c = tolower(c);
 
         if(isalpha(c)){ 
+// This checks:
+// Is it a letter? (a–z or A–Z)
             if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u')
+               // Check if vowel
                 vowels++;
             else 
                 consonents++;
