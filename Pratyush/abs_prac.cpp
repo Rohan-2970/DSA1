@@ -8,4 +8,4 @@ int main(){
     int c;
     c= abs(a-b);
     cout<<"Difference between 2 numbers: "<<c;
-}
+}̥
